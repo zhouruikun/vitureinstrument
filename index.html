@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>web ins</title>
+    <script src="js/jquery-3.3.1.js" ></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <script src="js/bootstrap.min.js" ></script>
+ 
+    <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+    
+
+</head>
+<body style="background-color:#dddddd;">
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #222222;">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-9">
+                    <div id="container" style="min-width:400px;height:400px;position: relative"></div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="setVoltageCH1">设置电压</label>
+                        <input type="number" class="form-control" name="setVoltageCH1" id="setVoltageCH1" aria-describedby="help-setv1" placeholder="">
+                        <small id="help-setv1" class="form-text text-muted">设置通道1输出电压</small>
+                        <label for="setCurrentCH1">设置电流</label>
+                        <input type="number" class="form-control" name="setCurrentCH1" id="setCurrentCH1" aria-describedby="help-setv1" placeholder="">
+                        <small id="help-setv1" class="form-text text-muted">设置通道1输出电流</small>
+                        <button type="button" class="btn btn-success">确定</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-9">
+                            <div id="container2" style="min-width:400px;height:400px;position: relative"></div>
+                    </div>
+                     <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="setVoltageCH2">设置电压</label>
+                            <input type="number" class="form-control" name="setVoltageCH2" id="setVoltageCH2" aria-describedby="help-setv1" placeholder="">
+                            <small id="help-setv2" class="form-text text-muted">设置通道2输出电压</small>
+                            <label for="setCurrentCH2">设置电流</label>
+                            <input type="number" class="form-control" name="setCurrentCH2" id="setCurrentCH2" aria-describedby="help-setv1" placeholder="">
+                            <small id="help-setv2" class="form-text text-muted">设置通道2输出电流</small>
+                            <button type="button" class="btn btn-success">确定</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+    </div>    
+
+<script src="js/testchart.js"></script>
+</body>
+</html>
