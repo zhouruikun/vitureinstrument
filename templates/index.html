@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>web ins</title>
-    <script src="templates/js/jquery-3.3.1.js" ></script>
+    <title>web ins</title> 
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.js') }}" ></script>
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
-    <script src="js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
  
     <script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
     <script src="https://img.hcharts.cn/highcharts/highcharts-more.js"></script>
@@ -86,6 +86,6 @@
             </div>
     </div>    
 
-<script src="js/testchart.js"></script>
+<script src="{{ url_for('static', filename='js/testchart.js') }}"></script>
 </body>
 </html>
